@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-@he409gyr**%4dlf5e^1l+8#t)&*#8xt0(5!-15$=65185v2ch
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['crmalakx.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -76,9 +76,13 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': "db.afaqvctovprfbxcwkbuv.supabase.co",
+        'NAME': "postgres",
+        'USER': "postgres",
+        'PASSWORD': "3t7ctMBgOYV0JSJa",
+        'PORT': "5432",
+        }
 }
 
 
